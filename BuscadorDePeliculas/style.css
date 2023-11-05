@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #F5EDDD;
+}
+nav{
+    width: 100%vh;
+    height: 70px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #115510 97.14%, rgba(255, 255, 255, 0.00) 100%);
+}
+#buscador{
+    width: 612px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.28);
+   position: absolute;
+   margin-top: 0.5%;
+   margin-left: 45%;
+   text-align: end;
+   border: none;   
+}
+input::placeholder{
+    color: aliceblue;
+    font-size: larger;
+   
+}
+
+.contenedor{
+    width: 900px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: rgba(233, 158, 158, 0.35);
+    margin: 2%  20% ;
+    display: grid;
+    align-items: flex-start;
+    grid-template-areas: "h1 h1"
+    "imagen  lista "
+    "parrafo parrafo";
+    grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
+    
+    
+}
+
+.imgcartelera{
+
+height: 420px;
+margin-top: 1px;
+margin-right: 21px;
+margin-left: 21px;
+flex-shrink: 0;
+border-radius: 5%;
+grid-area: imagen;
+box-shadow: 5px 5px 5px green;
+
+}
+
+#lista{
+    margin-top: 1px;
+    list-style-type: none; 
+    grid-area: lista;
+}
+li{
+    color: #000;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 30px;
+}
+
+h1{
+    text-align:center;
+   
+    margin-top: 25px;
+    grid-area: h1;
+  
+}
+p{
+    margin-top: 2%;
+    grid-area: parrafo;
+    text-align: justify;
+    margin: 2% 2%;
+}
